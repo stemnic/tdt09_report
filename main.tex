@@ -14,6 +14,8 @@
 % Inserting title page
 \import{./Sections/}{title}
 
+\nocite{*} % To make sure bib is included
+
 % Defining front matter settings (Norsk: innstillinger for forord m.m.)
 \frontmatter
 
@@ -34,10 +36,9 @@
 \import{./Sections/}{Discussion}
 \import{./Sections/}{Conclusion}
 
-
 % Printing bibliography
 \newpage
-\printbibliography[heading = bibintoc]    % 'bibintoc' inserts our bibliography into the table of contents
+\printbibliography[heading = bibintoc]    % 'bibintoc' inserts our bibliography into the table of contents 
 
 % End of document
 \end{document}
