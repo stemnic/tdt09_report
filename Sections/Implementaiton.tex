@@ -93,6 +93,7 @@ void uartintr(void)
 }
 \end{minted}
 
+\newpage
 \subsection{Console Write}
 \label{imp:console-write}
 
@@ -136,7 +137,7 @@ void hypercall_putc(char c){
 
 The code above assumes that the hypervisor has a syscall which is identified with 10. There is no reason to why 10 specifically is chosen as a number and this can be changed arbitrarily. The character is supplied directly in one of the argument registers. It takes the same input as uartputc but formats it into a syscall that is sent to the hypervisor instead of interacting directly with the hardware. Since our syscall function also returns a value, we could also do some checking if for some reason our hypercall failed. Though we have opted to not do this in this scenario.  
 
-
+\newpage
 \subsection{Console Read}
 \label{imp:console-read}
 
