@@ -1,6 +1,8 @@
-\section{Relevant Work}
-\label{relevant-work}
+%\section{Relevant Work}
+%\label{relevant-work}
 
 
 \section{Conclucion}
 \label{conclucion}
+
+In this paper we had a look at the differences between paravirtualization and fullvirtualization and how they differ in form of complexity, resource usage and needed extra resources to use them. In general, if the resources and time is available for it than a paravirtualization approach should be considered since it in the long run provides better performance than a fullvirtualization. Through the educational operating system XV6 we saw in \ref{imp} how a theoretical port of XV6-riscv could be done with the help of a compatible hypervisor. We did this by porting the hardware specific driver calls in the console part of the codebase to rather do a custom syscall to a hypothetical hypervisor. Due to time constraints, we did not get time time to port more functions but this should give a general outline on how XV6 could be ported to a paravirtualizationed setting and how this can be achieved with operating systems in general.
